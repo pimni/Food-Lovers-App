@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:alpha="0.85"
+            android:scaleType="centerCrop"
+            android:src="@drawable/food1" />
+
+        <TextView
+            android:id="@+id/Foodnametv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="280dp"
+            android:textStyle="bold"
+            android:text="Foodname"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp" />
+
+        <ImageView
+            android:id="@+id/imgPin2"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_below="@+id/Foodnametv"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/Shopnametv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shopname"
+           android:layout_marginLeft="8dp"
+            android:layout_below="@id/Foodnametv"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/imgPin2"
+            android:textColor="#FFFFFF"
+            />
+
+        <ImageView
+            android:id="@+id/rateView"
+            android:layout_width="80dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/Foodnametv"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/detailView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detail"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="18dp"
+        />
+
+
+
+</LinearLayout>
